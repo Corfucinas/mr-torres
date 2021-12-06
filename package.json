@@ -2,13 +2,13 @@
   "name": "mr-torres",
   "author": "Pedro Torres <corfucinas@protonmail.com> (https://absolutearray.com/)",
   "license": "GPL-3.0-or-later",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A personal card for Mr. Torres",
   "homepage": "https://github.com/corfucinas/mr-torres",
   "main": "./dist/index.js",
   "types": "./dist/src/index.d.ts",
   "bin": {
-    "mr-torres": "./dist/index.js"
+    "mr-torres": "./dist/src/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
   "scripts": {
     "start": "tsc && node ./dist/src/index.js",
     "build": "tsc",
-    "pub": "tsc && npm version major & npm publish",
+    "pub": "tsc && npm version minor & npm publish",
     "lint": "eslint .",
     "clean": "rm -r ./dist"
   },
