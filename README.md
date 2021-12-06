@@ -10,12 +10,10 @@ npx mr-torres
 
 ## SCREENSHOT
 
-![image](https://github.com/corfucinas/mr-torres/media/screenshot.png "program-output")
+![image](https://raw.githubusercontent.com/Corfucinas/mr-torres/master/media/screenshot.png "program-output")
 
 ### Want to make your own?
 
-[Fork this repo]()
+Fork this repo and make it yours
 
-You can also read the article by @jackboberg for reference.
-
-[Write a Simple npx Business Card](https://studioelsa.se/blog/open-source-oss-npx-business-card/ "npx-article")
+[You can also read the article by @jackboberg for reference.](https://studioelsa.se/blog/open-source-oss-npx-business-card/ "npx-article")
