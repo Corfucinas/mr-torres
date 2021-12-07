@@ -12,8 +12,12 @@ npx mr-torres
 
 ![image](https://raw.githubusercontent.com/Corfucinas/mr-torres/master/media/screenshot.png "program-output")
 
-### Want to make your own?
+### NPM Package
 
-Fork this repo and make it yours
+It is published [here](https://www.npmjs.com/package/mr-torres "npm-package-website")
+
+#### Want to make your own?
+
+[Fork this repo and make it yours](https://github.com/Corfucinas/mr-torres/ "github-repo")
 
 [You can also read the article by @jackboberg for reference.](https://studioelsa.se/blog/open-source-oss-npx-business-card/ "npx-article")
