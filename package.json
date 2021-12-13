@@ -7,9 +7,7 @@
   "homepage": "https://github.com/corfucinas/mr-torres",
   "main": "./dist/index.js",
   "types": "./dist/src/index.d.ts",
-  "bin": {
-    "mr-torres": "./dist/src/index.js"
-  },
+  "bin": "./dist/src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/corfucinas/mr-torres.git"
@@ -48,5 +46,6 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
