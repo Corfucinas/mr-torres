@@ -30,41 +30,47 @@ const questions = [
         value: (): void => {
           open('mailto:corfucinas@protonmail.com')
           console.log("\nDone, I'll reply as soon as possible.\n")
-          console.log(`\n ${chalk.green.bold('You can reach me at corfucinas@protonmail.com')}\n`)
-        }
+          console.log(
+            `\n ${chalk.green.bold(
+              'You can reach me at corfucinas@protonmail.com'
+            )}\n`
+          )
+        },
       },
       // Download Resume
       {
         name: `Download my ${chalk.blueBright.bold('Resume')}`,
         value: (): void => {
           const loader: Ora = ora({
-            text: 'Downloading Resume'
+            text: 'Downloading Resume',
           }).start()
-          request(
-            'https://absolutearray.com/resume/resume', (res): void => {
-              res.pipe(fs.createWriteStream('./pedro-torres-resume.html').on('finish', (): void => {
-                const downloadPath: string = path.join(
-                  process.cwd(),
-                  'pedro-torres.html'
-                )
-                console.log(`\nResume Downloaded at ${downloadPath} \n`)
-                open('./pedro-torres-resume.html')
-                loader.succeed('Resume Downloaded')
-                loader.stop()
-              }))
-            }
-          ).end()
-        }
+          request('https://absolutearray.com/resume/resume', (res): void => {
+            res.pipe(
+              fs
+                .createWriteStream('./pedro-torres-resume.html')
+                .on('finish', (): void => {
+                  const downloadPath: string = path.join(
+                    process.cwd(),
+                    'pedro-torres.html'
+                  )
+                  console.log(`\nResume Downloaded at ${downloadPath} \n`)
+                  open('./pedro-torres-resume.html')
+                  loader.succeed('Resume Downloaded')
+                  loader.stop()
+                })
+            )
+          }).end()
+        },
       },
       // Quit
       {
         name: 'Quit the program.',
         value: (): void => {
           console.log('\nHave a productive day 🤝.\n')
-        }
-      }
-    ]
-  }
+        },
+      },
+    ],
+  },
 ]
 
 const contactInformation = {
@@ -82,7 +88,7 @@ const contactInformation = {
   labelGitHub: chalk.white.bold('     GitHub:'),
   labelLinkedIn: chalk.white.bold('   LinkedIn:'),
   labelWeb: chalk.white.bold('        Web:'),
-  labelCard: chalk.white.bold('       Card:')
+  labelCard: chalk.white.bold('       Card:'),
 }
 
 const personalInformation: string = boxen(
@@ -93,19 +99,23 @@ const personalInformation: string = boxen(
     `${contactInformation.labelLinkedIn}  ${contactInformation.linkedin}`,
     `${contactInformation.labelWeb}  ${contactInformation.web}\n`,
     `${contactInformation.labelCard}  ${contactInformation.npx}\n`,
-    `${chalk.italic('My priority is spearheading the creation and development of products.')}`
+    `${chalk.italic(
+      'My priority is spearheading the creation and development of products.'
+    )}`,
   ].join('\n'),
   {
     margin: 1,
     float: 'center',
     padding: 1,
     borderStyle: boxen.BorderStyle.Double,
-    borderColor: 'white'
+    borderColor: 'white',
   }
 )
 
 console.log(personalInformation)
-const navigationTip: string = `Tip: Try ${chalk.cyanBright.bold('cmd/ctrl + click')} on the links above\n`
+const navigationTip: string = `Tip: Try ${chalk.cyanBright.bold(
+  'cmd/ctrl + click'
+)} on the links above\n`
 console.log(navigationTip)
 
 prompt(questions).then((answer): any => answer.action())
