@@ -2,9 +2,11 @@
   "name": "mr-torres",
   "author": "Pedro Torres <corfucinas@protonmail.com> (https://absolutearray.com/)",
   "license": "GPL-3.0-or-later",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A personal card for Mr. Torres",
   "homepage": "https://github.com/corfucinas/mr-torres",
+  "type": "module",
+  "packageManager": "yarn@3.1.1",
   "main": "./dist/index.js",
   "types": "./dist/src/index.d.ts",
   "bin": "./dist/src/index.js",
@@ -46,6 +48,5 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0"
-  },
-  "packageManager": "yarn@3.1.1"
+  }
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import boxen, { BorderStyle } from 'boxen'
+import boxen from 'boxen'
 import chalk from 'chalk'
 import fs from 'fs'
 import { request } from 'https'
@@ -99,7 +99,7 @@ const personalInformation: string = boxen(
     margin: 1,
     float: 'center',
     padding: 1,
-    borderStyle: BorderStyle.Double,
+    borderStyle: boxen.BorderStyle.Double,
     borderColor: 'white'
   }
 )
