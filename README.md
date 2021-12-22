@@ -1,6 +1,6 @@
 # NPX CARD
 
-This my NPX card to connect with me directly via console; like all developers, we understand that CLI > GUI.
+This is my NPX card to connect with me directly via console; like all developers, we understand that CLI > GUI.
 
 just type 👇
 
