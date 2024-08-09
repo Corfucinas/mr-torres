@@ -48,6 +48,6 @@
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0"
+    "eslint-plugin-promise": "^7.0.0"
   }
 }
